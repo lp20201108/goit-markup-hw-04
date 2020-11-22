@@ -1,0 +1,575 @@
+html{
+  box-sizing: border-box;
+}
+
+*
+*::before;
+*::after;{
+  box-sizing: inherit;
+}
+
+:root {
+  --primary-text-color: #757575;
+  --title-text-color: black;
+  --effect-color: #2196f3;
+  --dark-background-color: #2f303a;
+  --primary-white-color: white;
+}
+
+ img{
+   display: block;
+   max-width: 100%;
+ }
+
+ a {
+  text-decoration: none;
+  color: inherit; 
+}
+
+/*=========== backgrounds colors================ */
+
+body {
+  background-color: var(--primary-white-color);
+  color: var(--primary-text-color);
+  font-family: roboto, sans-serif;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+  margin: 0;
+  }
+  
+  
+
+  /*================= container// flex box geral elements================= */
+
+  .container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+  /* outline: 2px solid tomato; */
+}
+
+
+.section{
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+  
+
+.main,
+.section,
+.footer,
+{
+  margin-top: 0; 
+  margin-bottom:0;
+ }
+
+
+ /*================= COMPONENTS================= */
+
+/*================= lists================= */
+
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* =================logo style =================*/
+
+.logotip {
+font-family: Raleway, sans-serif;
+font-weight: bold;
+font-size: 26px;
+line-height: 1.2;
+}
+
+ .logo-web{
+   color: var(--effect-color);
+ }
+
+.logo-studio {
+  color: #212121;
+}
+
+/* ================= buttons ================= */
+
+.button {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.6;
+  font-family: inherit;
+  letter-spacing: inherit;
+  border-radius: 4px;
+  border: transparent;
+ }
+
+.button.primary{
+  background-color: var(--effect-color);
+  color: var(--primary-white-color);
+}
+
+.button.secundary{
+  background-color: #F5F4FA;
+  color: var(--title-text-color);
+}
+
+ .button.primary:hover,
+.button.primary:focus {
+  color:  background-color: #F5F4FA;
+  color: var(--title-text-color);
+}
+
+.button.secundary:hover,
+.button.secundary:focus {
+  background-color: var(--effect-color);
+  color: var(--primary-white-color);
+}
+
+/* buttons that contain call to action - order, submit, send */
+.button.call{
+font-weight: bold;
+font-size: 16px;
+line-height: 1.9;
+text-align: center;
+letter-spacing: 0.06em;
+min-width: 200px;
+height: 50px;
+}
+
+
+
+/*================= titles =================*/
+
+h2 {
+font-weight: bold;
+font-size: 36px;
+line-height: 1.17;
+text-align: center;
+margin-top: 0;
+margin-bottom: 50px;
+}
+
+
+.section-title {
+  color: var(--title-text-color);
+  margin-top: 0;
+  }
+
+
+/*================= END COMPONENTS================= */
+
+
+/*================= Header and navigation section ================= */
+
+  .header{
+    padding: 32px 0;
+    border: 1px solid #ECECEC;
+  }
+
+   .header .container{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  
+   
+ .navigation{
+  display: flex;
+  align-items: center;
+  
+  }
+
+    .nav-logo{
+    margin-right: 90px;
+  }
+    
+  .site-nav,
+  .contacts {
+    display: flex;
+  }
+
+    .site-nav li:not(:last-child){
+    display: inline-block;
+    margin-right: 30px;
+  }
+
+.contacts .contacts-item + .contacts-item{
+margin-left: 30px;
+margin-right: auto;
+}
+
+.contacts-item{
+  display: flex;
+
+}
+
+.contacts-svg{
+  width: 32;
+  height: 32;
+}
+
+.site-nav a {
+  color: #212121;
+  font-weight: 500;
+}
+
+.site-nav a:hover,
+.site-nav a:focus {
+  color: var(--effect-color);
+}
+
+.site-nav .link.current {
+  color: var(--effect-color);
+}
+
+.contacts a {
+  color: #757575;
+}
+.contacts a:hover,
+.contacts a:focus {
+  color: var(--effect-color);
+}
+
+.contacts-item{
+font-weight: 500;
+font-size: 14px;
+line-height: 1.14;
+letter-spacing: 0.02em;
+}
+
+
+/*================= hero section ================= */
+
+.hero{
+ text-align: center;
+  padding: 200px;
+}
+
+.hero {
+  background-color:  var(--dark-background-color); 
+  background-image:  linear-gradient(
+    rgba(47, 48, 58, 0.4),
+    rgba(47, 48, 58, 0.4)
+  ), url(../images/hero-image.jpg);
+   width: 1600px;
+   height: 600px;
+   margin: 0 auto;
+   background-repeat: no-repeat;
+    }
+
+
+
+.hero-title {    
+
+color: var(--primary-white-color);
+font-style: normal;
+font-weight: 900;
+font-size: 44px;
+line-height: 1.4;
+letter-spacing: 0.06em;
+text-transform: uppercase;
+margin-top: 0;
+margin-bottom: 30px;
+max-width:696px;
+margin-left: auto;
+margin-right: auto; 
+}
+
+
+.hero .button {
+   padding: 10px 32px;
+ 
+}
+
+
+/*=================  priority section   наши приоритеты  ================= */
+
+
+.company-values .section-title  {
+
+font-weight: bold;
+font-size: 14px;
+line-height: 1.14;
+text-transform: uppercase;
+}
+
+.company-values.section-title{
+   margin-bottom: 70px;
+   background-color: red;
+}
+
+.company-values{
+  display: flex;
+  justify-content: space-between;
+}
+
+
+ 
+.company.section-title{
+  margin-bottom: 10px;
+ 
+ }
+
+ .company-values li::before{
+   content:"" ;
+   display: inline-block;
+   width: 100%;
+   height: 120px;
+   background-color: #F5F4FA;
+   border-radius: 4px;
+   margin-bottom: 30px;
+   background-repeat: no-repeat;
+   background-image: url(../images/antenna\ 1.svg);
+   background-position: center;
+ }
+
+ .company-values li:nth-child(2)::before{
+  background-image: url(../images/clock\ 1.svg);
+ }
+ .company-values li:nth-child(3)::before{
+  background-image: url(../images/diagram\ 1.svg);
+ }
+
+ .company-values li:nth-child(4)::before{
+  background-image: url(../images/astronaut\ 1.svg);
+ }
+
+
+.description {
+  display: inline-block;
+  margin-top: 0;
+  }
+
+.company-values li:not(:last-child){
+  margin-right: 30px;
+}
+
+
+
+/*================directions section  Чем мы занимаемся--> ================= */
+
+.directions .section-title{
+  margin-bottom: 50px;
+}
+
+
+.company-directions{
+  display: flex;
+  justify-content: space-between;
+}
+
+
+
+/*=================  team section ================= */
+
+.team {
+  background-color: #e5e5e5;
+   }
+
+    .team-list-item{
+     background-color: var(--primary-white-color);
+     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+     border-radius: 0px 0px 4px 4px;
+   }
+
+.team .section-title{
+  margin-bottom: 50px;
+}
+
+.team-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* .photo-team{
+  margin-bottom: 30px;;
+} */
+
+.under.section-title{
+  font-weight: 500;
+  font-size: 16px;
+ line-height: 1.18em;
+ text-align: center;
+  margin-bottom: 30px;
+}
+
+.job{
+font-size: 16px;
+line-height: 1.18em;
+text-align: center;
+margin-bottom: 30px;
+}
+
+
+
+.social-list{
+  display: flex;
+}
+
+/* .social-icon{
+  width: 20;
+  height: 20;
+  /* color: #AFB1B8; */
+  }  */
+
+ 
+
+.social-link{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44;
+  height: 44;
+  border-radius: 50%;
+  background-color:  var(--primary-white-color);
+}
+
+.social-link:hover,
+.social-link:focus {
+  color: var(--effect-color);
+}
+
+.social-link:hover .social-icon {
+  fill: var(--primary-white-color);
+}
+
+.team--item-description{
+  padding: 30px 32px;
+ }
+
+/*============= clients section ================= */
+
+.client-list{
+  display: flex;
+   }
+
+  .client-list-item .client-link {
+    display: flex;
+    width: 170px;
+    height: 90px;
+    margin-right: 0px;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+     } 
+
+    
+     .client-list li:not(:last-child) {
+      margin-right: 30px;
+    }
+
+ 
+
+
+/*===== footer section ================= */
+
+ .footer {
+   background-color: var(--dark-background-color);
+  }
+
+.footer .address,
+.footer .logo-studio {
+  color: var(--primary-white-color);
+  }
+
+.logo-footer{
+  margin-top: 0;
+  margin-bottom: 30px;
+ }
+
+
+  .footer{
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+
+  .address {
+  font-style: inherit;
+  color: #212121;
+}
+
+.email,
+.tel {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.contacts-footer li{
+  margin-top: 0;
+  margin-bottom: 9px;
+}
+
+
+/*================= style for portfolio page ================= */
+
+
+.filters{
+display:flex;
+justify-content: center;
+}
+
+.filters .button {
+  font-weight: 500;
+  margin-bottom: 50px;
+  padding: 6px 22px;
+  }
+
+.filters .button:not(:last-child) {
+   margin-right: 10px;
+}
+.portofolio .type{
+  font-size: 16px;
+  line-height: 1,9;
+  /* margin-top: 0; */
+}
+
+.type{
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.portofolio .section-title {
+
+
+font-weight: bold;
+font-size: 18px;
+line-height: 2;
+letter-spacing: 0.06em;
+margin-bottom: 4px;
+}
+
+
+.portofolio ul{
+  display: inline-flex;
+  flex-wrap: wrap;
+  }
+
+
+
+ .portofolio-list-item img{
+  margin-top: 30px;
+ }
+/* 
+ .portofolio-list-item img:nth-child(-n+3){
+  margin-top: 20px;
+ } */
+
+ /* .portofolio-list-item img.type:nth-last-child(1,2,3){
+  margin-top: 0px;
+ } */
+ 
+
+ .portofolio-list-item:not(:nth-child(3n)){
+    margin-right: 30px;
+      } 
+
+ .type:nth-last-child(-n + 3) {
+      margin-bottom: 0;
+      }
+
+  .portofolio-description{
+     border: 1px solid #EEEEEE;
+     box-sizing: border-box;
+  }
+
