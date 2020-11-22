@@ -447,14 +447,21 @@ margin-bottom: 30px;
 
   .client-list-item .client-link {
     display: flex;
+    align-items: center;
+    justify-content: center;
     width: 170px;
     height: 90px;
     margin-right: 0px;
     border: 1px solid #AFB1B8;
     border-radius: 4px;
-     } 
+    } 
 
-    
+    .client-link:hover,
+    .client-linkt:focus{
+     border-color:var(--effect-color);
+    }
+
+   
      .client-list li:not(:last-child) {
       margin-right: 30px;
     }
