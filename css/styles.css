@@ -219,6 +219,7 @@ color: var(--effect-color);
 .contacts a {
 color: #757575;
 }
+
 .contacts a:hover,
 .contacts a:focus {
 color: var(--effect-color);
@@ -231,10 +232,9 @@ line-height: 1.14;
 letter-spacing: 0.02em;
 }
 
-.contacts-item {
-  display: block;
+.adress-nav{
+  display: flex;
 }
-
 /*================= hero section ================= */
 
 .hero{
@@ -290,10 +290,6 @@ line-height: 1.14;
 text-transform: uppercase;
 }
 
-.company-values.section-title{
-   margin-bottom: 70px;
-   background-color: red;
-}
 
 .company-values{
   display: flex;
@@ -375,6 +371,7 @@ text-transform: uppercase;
 
 .team-list {
   display: flex;
+  justify-content: space-between;
   }
 
 
@@ -406,6 +403,10 @@ margin-bottom: 30px;
 }
   */
 
+.social-link .social-icon{
+
+}
+
 .social-link{
   display: flex;
   justify-content: center;
@@ -413,10 +414,17 @@ margin-bottom: 30px;
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  background-color:  tomato;
+  background-color: var(--primary-white-color);
 }
 
+.team-item-description .social-link:hover{
+background-color:var(--effect-color); ;
+}
 
+.social-list{
+  display: flex;
+  justify-content: space-between;
+}
 
 /* .social-link:hover .social-icon {
   fill: var(--primary-white-color);
@@ -480,12 +488,18 @@ margin-bottom: 30px;
   padding-bottom: 60px;
 }
 
-.social-links-footer h2{
+.social-footer .footer-title,
+.subscribe-title{
+   margin-left: 0;
+  margin-right: auto;
+  margin-bottom: 20px;
   font-weight: bold;
-    font-size: 14px;
+  font-size: 14px;
   line-height: 1.14em;
   text-transform: uppercase;
-  color: var(--primary-white-color); 
+  text-align: left;
+  color: white
+  
 }
 
 .social-footer .social-link{
@@ -497,10 +511,35 @@ margin-bottom: 30px;
   background-color:var(--effect-color);
 }
 
-.social-footer .social-link:hover .social-icon{
-  fill: var(--primary-white-color); 
+.social-footer{
+  padding: 0px;
+  width: 206px;
+  height: 80px;
+ }
+
+.social-footer .social-list .social-icon{
+  color: white
 }
 
+.footer.container {
+  display:flex;
+  align-items: baseline;
+  }
+
+.adress-footer{
+  margin-left: 0;
+  margin-right: 70px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+/* .footer-subscribe {
+  width:570px
+  height: 86px;
+  padding: 0px;
+  margin: 0 auto;
+  outline: solid 2px tomato;
+} */
 
   .address {
   font-style: inherit;
