@@ -47,8 +47,7 @@ body {
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
-  /* outline: 2px solid tomato; */
-}
+  }
 
 
 .section{
@@ -225,16 +224,26 @@ color: #757575;
 color: var(--effect-color);
 }
 
+
+.contacts a:hover .contacts-svg,
+.contacts a:focus .contacts-svg {
+fill: var(--effect-color);
+} 
+
+.contacts-svg{
+  fill: #757575;
+
+}
+
 .contacts-item{
+display: flex;
+align-items: center;
 font-weight: 500;
 font-size: 14px;
 line-height: 1.14;
 letter-spacing: 0.02em;
 }
 
-.adress-nav{
-  display: flex;
-}
 /*================= hero section ================= */
 
 .hero{
@@ -395,17 +404,9 @@ margin-bottom: 30px;
 .social-list{
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
 }
 
-/* .social-list-item{
-  margin-right: 10;
-}
-  */
-
-.social-link .social-icon{
-
-}
 
 .social-link{
   display: flex;
@@ -417,18 +418,25 @@ margin-bottom: 30px;
   background-color: var(--primary-white-color);
 }
 
-.team-item-description .social-link:hover{
-background-color:var(--effect-color); ;
+
+
+.social-link .social-icon{
+  width: 20px;
+  height: 20px;
+  fill: #AFB1B8;
 }
 
-.social-list{
-  display: flex;
-  justify-content: space-between;
+
+.team-item-description .social-link:hover,
+.team-item-description .social-link:focus {
+     background-color:var(--effect-color);
 }
 
-/* .social-link:hover .social-icon {
+.social-link:hover .social-icon{
   fill: var(--primary-white-color);
-} */
+}
+
+
 
 .team-item-description{
   padding: 30px 32px;
@@ -454,17 +462,23 @@ background-color:var(--effect-color); ;
     } 
 
     .client-link:hover,
-    .client-linkt:focus{
+    .client-link:focus{
      border-color:var(--effect-color);
     }
 
-   
+    .client-link:hover .client-svg,
+    .client-link:focus .client-svg{
+    fill:var(--effect-color);
+    }
+
      .client-list li:not(:last-child) {
       margin-right: 30px;
     }
 
- 
-
+ .client-svg{
+   fill:#AFB1B8
+ }
+  
 
 /*===== footer section ================= */
 
@@ -498,7 +512,7 @@ background-color:var(--effect-color); ;
   line-height: 1.14em;
   text-transform: uppercase;
   text-align: left;
-  color: white
+  color: var(--primary-white-color);
   
 }
 
@@ -511,15 +525,17 @@ background-color:var(--effect-color); ;
   background-color:var(--effect-color);
 }
 
+.social-footer .social-icon{
+fill: var(--primary-white-color)
+}
+
 .social-footer{
   padding: 0px;
   width: 206px;
   height: 80px;
  }
 
-.social-footer .social-list .social-icon{
-  color: white
-}
+
 
 .footer.container {
   display:flex;
