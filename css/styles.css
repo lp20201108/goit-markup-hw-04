@@ -200,11 +200,17 @@ align-items: center;
   margin-right: 30px;
 }
 
+
+.site-nav .link.current {
+  color: var(--effect-color);
+  position: relative;
+  }
+
 .site-nav .link.current::after{
   content: "";
   position: absolute;
-  left: 0;
-  bottom: -34px;
+  left: 0px;
+  bottom:0px;
   width: 100% ;
   height: 4px;
   color: var(--effect-color);
@@ -232,9 +238,6 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 color: var(--effect-color);
 }
 
-.site-nav .link.current {
-color: var(--effect-color);
-}
 
 .contacts a {
 color: #757575;
@@ -385,14 +388,17 @@ text-transform: uppercase;
   justify-content: space-between;
 }
 
-.company-directions .directions-subtitle {
-font-weight: bold;
-font-size: 14px;
-line-height: 1.14em;
-text-align: center;
-text-transform: uppercase;
-color: #FFFFFF;
+
+ .company-directions h3{
+  display: block;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14em;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
 }
+
 
 
 /*=================  team section ================= */
@@ -684,18 +690,9 @@ margin-bottom: 4px;
       box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     }
 
-      /* background-image: linear-gradient(
-        rgba(47, 48, 58, 0.4),
-        rgba(47, 48, 58, 0.4));
-    } */
+  
 
-  /* .portofolio-description{
-     border: 1px solid 757575;
-     box-sizing: border-box;
-  } */
-
-/* 
-  .portofolio-list-item{
+  .portofolio-list-item .text-cover{
     display: flex;
     position: absolute;
     padding: 63px 24px;
@@ -707,15 +704,15 @@ margin-bottom: 4px;
     background-color: rgba(33, 150, 243, 0.9);
     font-size: 18px;
     line-height: 1.56em;
-
     transform: translateY(100%);
     color: var (var(--primary-white-color));
+
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
 
-  .portofolio-list:hover .text-cover,
-  .portofolio-list:focus .text-cover{
+  .portofolio-list-item:hover .text-cover,
+  .portofolio-list-item:focus .text-cover{
     transform: translateY(0);
   }
 
@@ -723,20 +720,10 @@ margin-bottom: 4px;
     position: relative;
     overflow: hidden;
   }
-  .portofolio .text{
-    padding: 20px 24px;
-  } */
-
-
-
+  
 
   /*================= -- MODAL-WINDOW-- ================= */
 
-
-  .backdrop{
-    width: 100%;
-    height: 1024px;
-  }
 
   .backdrop {
     position: fixed;
@@ -755,24 +742,27 @@ margin-bottom: 4px;
     transform: translate(-50%, -50%);
     width: 528px;
     min-height: 581px;
-    background-color: #ffffff;
+    background-color: var (--primary-white-color);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
       0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
   }
   
-  .modal-close-btn {
+  .modal-close-button {
     position: absolute;
     top: 8px;
     right: 8px;
-    width: 30px;
-    height: 30px;
     border-radius: 50%;
     background-color: #ffffff;
     border: 1px solid rgba(0, 0, 0, 0.1);
     cursor: pointer;
   }
   
+  .close-icon{
+    fill: black;
+  }
+
+
   .hidden {
     opacity: 0;
     visibility: hidden;
